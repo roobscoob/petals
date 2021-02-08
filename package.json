@@ -1,0 +1,24 @@
+{
+  "name": "petals",
+  "version": "1.0.0",
+  "description": "A TypeScript interface for Scratch3 projects",
+  "main": "index.ts",
+  "scripts": {
+    "test": "ts-node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roobscoob/petals.git"
+  },
+  "keywords": [
+    "Scratch",
+    "Scratch3",
+    "TypeScript"
+  ],
+  "author": "Rose Hall <Rose@hall.ly>",
+  "license": "LGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/roobscoob/petals/issues"
+  },
+  "homepage": "https://github.com/roobscoob/petals#readme"
+}
