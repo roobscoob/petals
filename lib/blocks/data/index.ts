@@ -17,3 +17,15 @@ export { AddToList } from "./AddToList";
 export { DeleteAtList } from "./deleteAtList";
 
 export { InsertAtList } from "./insertAtList";
+
+export { ShowList } from "./showList";
+
+export { HideList } from "./hideList";
+
+export { HideVariable } from "./hideVariable";
+
+export { ShowVariable } from "./showVariable";
+
+export { SetVariableTo } from "./setVariableTo";
+
+export { IncrementVariableBy } from "./incrementVariableBy";

@@ -18,10 +18,10 @@ export abstract class Reporter extends Block {
 
       data_variable: Data.Variable,
       data_listcontents: Data.List,
-      data_itemoflist:
-      data_itemnumoflist:
-      data_lengthoflist:
-      data_listcontainsitem:
+      data_itemoflist: Data.ItemOfList,
+      data_itemnumoflist: Data.ItemNumberOfList,
+      data_lengthoflist: Data.LengthOfList,
+      data_listcontainsitem: Data.ListContainsItem,
 
       /**
        * Looks reporter opcodes: {@link "https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_looks.js"}
