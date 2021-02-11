@@ -1,8 +1,8 @@
 import { Opcode, PetalsValue } from "../../types";
 import { Block, Fields, Inputs } from "../block";
-import { EffectOption } from "./setEffectTo";
+import { EffectOption } from "./setGraphicEffectTo";
 
-export class ChangeEffectBy extends Block {
+export class ChangeGraphicEffectBy extends Block {
   public readonly opcode = Opcode.ChangeGraphicEffectBy;
 
   constructor(

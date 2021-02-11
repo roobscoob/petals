@@ -1,7 +1,7 @@
 import { Opcode, PetalsValue } from "../../types";
 import { Block, Inputs } from "../block";
 
-export class SetSize extends Block {
+export class SetSizeTo extends Block {
   public readonly opcode = Opcode.SetSizeTo;
 
   constructor(

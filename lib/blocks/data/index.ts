@@ -8,7 +8,7 @@ export { ItemNumberOfList } from "./itemNumberOfList";
 
 export { LengthOfList } from "./lengthOfList";
 
-export { ListContainsItem } from "./ListContainsItem";
+export { ListContainsItem } from "./listContainsItem";
 
 export { DeleteAllOfList } from "./deleteAllOfList";
 

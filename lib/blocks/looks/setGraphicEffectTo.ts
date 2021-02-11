@@ -11,7 +11,7 @@ export enum EffectOption {
     Ghost = "ghost"
 }
 
-export class SetEffectTo extends Block {
+export class SetGraphicEffectTo extends Block {
   public readonly opcode = Opcode.SetGraphicEffectTo;
 
   constructor(
