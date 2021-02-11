@@ -52,17 +52,17 @@ export abstract class Block {
        * Data Stack opcodes {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_data.js}
        */
 
-      data_setvariableto:
-      data_changevariableby:
-      data_hidevariable:
-      data_showvariable:
-      data_addtolist:
-      data_deleteoflist:
-      data_deletealloflist:
-      data_insertatlist:
-      data_replaceitemoflist:
-      data_hidelist:
-      data_showlist:
+      data_setvariableto: Data.SetVariableTo,
+      data_changevariableby: Data.IncrementVariableBy,
+      data_hidevariable: Data.HideVariable,
+      data_showvariable: Data.ShowVariable,
+      data_addtolist: Data.AddToList, 
+      data_deleteoflist: Data.DeleteAtList,
+      data_deletealloflist: Data.DeleteAllOfList,
+      data_insertatlist: Data.InsertAtList,
+      data_replaceitemoflist: Data.ReplaceItemOfList,
+      data_hidelist: Data.HideList,
+      data_showlist: Data.ShowList,
 
       /**
        * Event Stack opcodes {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_event.js}
