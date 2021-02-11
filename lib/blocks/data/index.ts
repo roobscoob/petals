@@ -12,7 +12,7 @@ export { ListContainsItem } from "./ListContainsItem";
 
 export { DeleteAllOfList } from "./deleteAllOfList";
 
-export { AddToList } from "./AddToList";
+export { AddToList } from "./addToList"
 
 export { DeleteAtList } from "./deleteAtList";
 
