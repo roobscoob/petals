@@ -374,7 +374,7 @@
     }],
     "@typescript-eslint/method-signature-style": ["error", "method"],
     "camelcase": "off",
-    "@typescript-eslint/naming-convention": ["error",
+    "@typescript-eslint/naming-convention": ["warn",
       {
         "selector": "default",
         "format": ["camelCase"],
