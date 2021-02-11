@@ -10,7 +10,7 @@ export type Fields = {
 }
 
 export type Inputs = {
-  [key: string]: PetalsValue | Script;
+  [key: string]: PetalsValue;
 }
 
 export abstract class Block {

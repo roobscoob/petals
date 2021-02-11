@@ -1,5 +1,4 @@
 import { Costume } from "../../asset";
-import { Script } from "../../script";
 import { Opcode, PetalsValue } from "../../types";
 import { Block, Inputs } from "../block";
 import { Reporter } from "../reporter";
@@ -32,8 +31,8 @@ export class SwitchBackdropTo extends Block {
   get inputs(): Inputs {
     return {
       BACKDROP: this.backdrop instanceof Costume
-      ? new Script([new SwitchBackdropToMenu(this.backdrop)])
-      : this.backdrop,
+        ? new SwitchBackdropToMenu(this.backdrop)
+        : this.backdrop,
     };
   }
 }
