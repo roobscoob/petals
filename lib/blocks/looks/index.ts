@@ -1,4 +1,3 @@
-
 export { BackdropNumberName } from "./backdropNumberName";
 
 export { ChangeGraphicEffectBy } from "./changeGraphicEffectBy";
@@ -9,7 +8,7 @@ export { ClearGraphicEffects } from "./clearGraphicEffects";
 
 export { CostumeNumberName } from "./costumeNumberName";
 
-export { GoFowardBackLayers } from "./goForwardBackLayers";
+export { GoFowardBackwardLayers } from "./goForwardBackwardLayers";
 
 export { GoToFrontBack } from "./goToFrontBack";
 
@@ -33,7 +32,7 @@ export { Size } from "./size";
 
 export { SwitchBackdropTo } from "./switchBackdropTo";
 
-export { SwitchBackdropToAndWait } from "./SwitchBackdropToAndWait";
+export { SwitchBackdropToAndWait } from "./switchBackdropToAndWait";
 
 export { SwitchCostumeTo } from "./switchCostumeTo";
 

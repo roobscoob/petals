@@ -1,12 +1,16 @@
 import { Opcode, PetalsValue } from "../../types";
 import { Block, Fields, Inputs } from "../block";
-import { FrontBackLevel } from "./goToFrontBack";
 
-export class GoFowardBackLayers extends Block {
+export enum ForwardBackwardLevel {
+  Forward = "forward",
+  Backward = "backward"
+}
+
+export class GoFowardBackwardLayers extends Block {
   public readonly opcode = Opcode.GoForwardBackwardLayers;
 
   constructor(
-    public frontback: FrontBackLevel,
+    public forwardbackward: ForwardBackwardLevel,
     public num: PetalsValue,
   ) {
     super();
@@ -14,7 +18,7 @@ export class GoFowardBackLayers extends Block {
 
   get fields(): Fields {
     return {
-      FRONT_BACK: this.frontback
+      FORWARD_BACKWARD: this.forwardbackward
     };
   }
 

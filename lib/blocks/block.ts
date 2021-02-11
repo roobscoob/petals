@@ -96,7 +96,7 @@ export abstract class Block {
       looks_changestretchby: null,
       looks_setstretchto: null,
       looks_gotofrontback: Looks.GoToFrontBack,
-      looks_goforwardbackwardlayers: Looks.GoFowardBackLayers,
+      looks_goforwardbackwardlayers: Looks.GoFowardBackwardLayers,
 
       /**
        * Motion Stack opcodes: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_motion.js}

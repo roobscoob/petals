@@ -111,8 +111,12 @@ export enum Opcode {
   Hide = "looks_hide",
   /** @type Looks @type Stack @see Scratch-VM Blocks/looks: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_looks.js}*/
   HideAllSprites = "looks_hideallsprites",
+  /** @internal @type Looks @type Stack @see Scratch-VM Blocks/looks: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_looks.js}*/
+  SwitchCostumeToMenu = "looks_switchcostumtomenu",
   /** @type Looks @type Stack @see Scratch-VM Blocks/looks: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_looks.js}*/
   SwitchCostumeTo = "looks_switchcostumeto",
+  /** @internal @type Looks @type Stack @see Scratch-VM Blocks/looks: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_looks.js}*/
+  SwitchBackdropToMenu = "looks_switchbackdroptomenu",
   /** @type Looks @type Stack @see Scratch-VM Blocks/looks: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_looks.js}*/
   SwitchBackdropTo = "looks_switchbackdropto",
   /** @type Looks @type Stack @see Scratch-VM Blocks/looks: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_looks.js}*/
