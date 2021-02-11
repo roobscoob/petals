@@ -2,7 +2,7 @@
   "name": "petals",
   "version": "1.0.0",
   "description": "A TypeScript interface for Scratch3 projects",
-  "main": "index.ts",
+  "main": "dist/index.js",
   "scripts": {
     "test": "ts-node test"
   },

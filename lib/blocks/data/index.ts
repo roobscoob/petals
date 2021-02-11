@@ -8,11 +8,11 @@ export { ItemNumberOfList } from "./itemNumberOfList";
 
 export { LengthOfList } from "./lengthOfList";
 
-export { ListContainsItem } from "./ListContainsItem";
+export { ListContainsItem } from "./listContainsItem";
 
 export { DeleteAllOfList } from "./deleteAllOfList";
 
-export { AddToList } from "./AddToList";
+export { AddToList } from "./addToList"
 
 export { DeleteAtList } from "./deleteAtList";
 

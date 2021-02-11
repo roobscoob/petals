@@ -2,13 +2,13 @@ import { PetalsValue, Opcode } from "../../types";
 import { Inputs, Block, Fields } from "../block";
 import { Reporter } from "../reporter";
 import { Sprite } from "../../targets/sprite";
-import { Script } from "../../script";
 
 /**
  * @internal
  */
 export class CreateCloneOfMenu extends Reporter {
   public readonly opcode = Opcode.CreateCloneOfMenu;
+  
   constructor(
     public readonly sprite: Sprite,
   ) {
@@ -34,7 +34,7 @@ export class CreateCloneOf extends Block {
   get inputs(): Inputs {
     return {
       CLONE_OPTION: this.sprite instanceof Sprite
-        ? new Script([new CreateCloneOfMenu(this.sprite)])
+        ? new CreateCloneOfMenu(this.sprite)
         : this.sprite,
     };
   }

@@ -3,13 +3,14 @@ import { Script } from "../script";
 import { List, Variable } from "./data/variables";
 import * as Control from "./control";
 import * as Data from "./data";
+import * as Looks from "./looks";
 
 export type Fields = {
   [key: string]: string | Variable | List;
 }
 
 export type Inputs = {
-  [key: string]: PetalsValue | Script;
+  [key: string]: PetalsValue;
 }
 
 export abstract class Block {
@@ -75,27 +76,27 @@ export abstract class Block {
        * Looks Stack opcodes {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_looks.js}
        */
 
-      looks_say:
-      looks_sayforsecs:
-      looks_think:
-      looks_thinkforsecs:
-      looks_show:
-      looks_hide:
-      looks_hideallsprites:
-      looks_switchcostumeto:
-      looks_switchbackdropto:
-      looks_switchbackdroptoandwait:
-      looks_nextcostume:
-      looks_nextbackdrop:
-      looks_changeeffectby:
-      looks_seteffectto:
-      looks_cleargraphiceffects:
-      looks_changesizeby:
-      looks_setsizeto:
-      looks_changestretchby:
-      looks_setstretchto:
-      looks_gotofrontback:
-      looks_goforwardbackwardlayers:
+      looks_say: Looks.Say,
+      looks_sayforsecs: Looks.SayForSeconds,
+      looks_think: Looks.Think,
+      looks_thinkforsecs: Looks.ThinkForSeconds,
+      looks_show: Looks.Show,
+      looks_hide: Looks.Hide,
+      looks_hideallsprites: null,
+      looks_switchcostumeto: Looks.SwitchCostumeTo,
+      looks_switchbackdropto: Looks.SwitchBackdropTo,
+      looks_switchbackdroptoandwait: Looks.SwitchBackdropToAndWait,
+      looks_nextcostume: Looks.NextCostume,
+      looks_nextbackdrop: Looks.NextBackdrop,
+      looks_changeeffectby: Looks.ChangeGraphicEffectBy,
+      looks_seteffectto: Looks.SetGraphicEffectTo,
+      looks_cleargraphiceffects: Looks.ClearGraphicEffects,
+      looks_changesizeby: Looks.ChangeSizeBy,
+      looks_setsizeto: Looks.SetSizeTo,
+      looks_changestretchby: null,
+      looks_setstretchto: null,
+      looks_gotofrontback: Looks.GoToFrontBack,
+      looks_goforwardbackwardlayers: Looks.GoFowardBackwardLayers,
 
       /**
        * Motion Stack opcodes: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_motion.js}
