@@ -7,20 +7,20 @@ export class ChangeGraphicEffectBy extends Block {
 
   constructor(
     public effect: EffectOption,
-    public change: PetalsValue
+    public change: PetalsValue,
   ) {
-    super(); 
+    super();
   }
 
   get fields(): Fields {
     return {
-      EFFECT: this.effect
+      EFFECT: this.effect,
     };
   }
 
   get inputs(): Inputs {
     return {
-      CHANGE: this.change
+      CHANGE: this.change,
     };
   }
 }

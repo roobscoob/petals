@@ -3,7 +3,7 @@ import { WrapBlock } from "..";
 import { Opcode } from "../../types";
 import { Script } from "../../script";
 import { Inputs, Fields } from "../block";
-import { Variable } from "../../variables";
+import { Variable } from "../data/variables";
 
 export class ForEach extends WrapBlock {
   public readonly opcode = Opcode.ForEach;

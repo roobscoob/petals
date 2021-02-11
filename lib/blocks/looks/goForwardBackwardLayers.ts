@@ -3,7 +3,7 @@ import { Block, Fields, Inputs } from "../block";
 
 export enum ForwardBackwardLevel {
   Forward = "forward",
-  Backward = "backward"
+  Backward = "backward",
 }
 
 export class GoFowardBackwardLayers extends Block {
@@ -18,13 +18,13 @@ export class GoFowardBackwardLayers extends Block {
 
   get fields(): Fields {
     return {
-      FORWARD_BACKWARD: this.forwardbackward
+      FORWARD_BACKWARD: this.forwardbackward,
     };
   }
 
   get inputs(): Inputs {
     return {
-      NUM: this.num
+      NUM: this.num,
     };
   }
 }

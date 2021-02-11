@@ -1,8 +1,8 @@
 import { Script } from "../script";
-import { Variable } from "../variables";
-import { Broadcast } from "../Broadcast";
+import { Variable } from "../blocks/data/variables";
+import { Broadcast } from "../broadcast";
 import { Costume, Sound } from "../asset";
-import { List } from "../variables/list";
+import { List } from "../blocks/data/variables/list";
 
 export abstract class Target {
   public broadcasts: Broadcast[] = [];

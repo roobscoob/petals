@@ -12,7 +12,7 @@ export class Think extends Block {
 
   get inputs(): Inputs {
     return {
-      MESSAGE: this.message
+      MESSAGE: this.message,
     };
   }
 }
