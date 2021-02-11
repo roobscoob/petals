@@ -9,6 +9,7 @@ import { Script } from "../../script";
  */
 export class CreateCloneOfMenu extends Reporter {
   public readonly opcode = Opcode.CreateCloneOfMenu;
+  
   constructor(
     public readonly sprite: Sprite,
   ) {
