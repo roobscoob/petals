@@ -1,18 +1,18 @@
 import { Opcode, PetalsValue } from "../../types";
 import { Block, Inputs } from "../block";
 
-export class SetX extends Block {
-  public readonly opcode = Opcode.SetX;
+export class Round extends Block {
+  public readonly opcode = Opcode.Round;
 
   constructor(
-    public x: PetalsValue,
+    public num: PetalsValue,
   ) {
     super();
   }
 
   get inputs(): Inputs {
     return {
-      X: this.x,
-    };
+      NUM: this.num,
+    }
   }
 }

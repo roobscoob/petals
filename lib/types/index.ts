@@ -195,41 +195,41 @@ export enum Opcode {
   /** @type Motion @type Reporter @see Scratch-VM Blocks/motion: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_motion.js}*/
   YScroll = "motion_yscroll",
 
-  /** @type Operator @type Reporter @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operator.js}*/
+  /** @type Operator @type Reporter @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operators.js}*/
   Add = "operator_add",
-  /** @type Operator @type Reporter @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operator.js}*/
+  /** @type Operator @type Reporter @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operators.js}*/
   Subtract = "operator_subtract",
-  /** @type Operator @type Reporter @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operator.js}*/
+  /** @type Operator @type Reporter @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operators.js}*/
   Multiply = "operator_multiply",
-  /** @type Operator @type Reporter @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operator.js}*/
+  /** @type Operator @type Reporter @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operators.js}*/
   Divide = "operator_divide",
-  /** @type Operator @type Reporter / Boolean @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operator.js}*/
+  /** @type Operator @type Reporter / Boolean @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operators.js}*/
   LessThan = "operator_lt",
-  /** @type Operator @type Reporter / Boolean @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operator.js}*/
+  /** @type Operator @type Reporter / Boolean @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operators.js}*/
   Equals = "operator_equals",
-  /** @type Operator @type Reporter / Boolean @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operator.js}*/
+  /** @type Operator @type Reporter / Boolean @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operators.js}*/
   GreaterThan = "operator_gt",
-  /** @type Operator @type Reporter / Boolean @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operator.js}*/
+  /** @type Operator @type Reporter / Boolean @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operators.js}*/
   And = "operator_and",
-  /** @type Operator @type Reporter / Boolean @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operator.js}*/
+  /** @type Operator @type Reporter / Boolean @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operators.js}*/
   Or = "operator_or",
-  /** @type Operator @type Reporter / Boolean @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operator.js}*/
+  /** @type Operator @type Reporter / Boolean @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operators.js}*/
   Not = "operator_not",
-  /** @type Operator @type Reporter @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operator.js}*/
+  /** @type Operator @type Reporter @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operators.js}*/
   Random = "operator_random",
-  /** @type Operator @type Reporter @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operator.js}*/
+  /** @type Operator @type Reporter @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operators.js}*/
   Join = "operator_join",
-  /** @type Operator @type Reporter @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operator.js}*/
+  /** @type Operator @type Reporter @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operators.js}*/
   LetterOf = "operator_letter_of",
-  /** @type Operator @type Reporter @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operator.js}*/
+  /** @type Operator @type Reporter @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operators.js}*/
   Length = "operator_length",
-  /** @type Operator @type Reporter / Boolean @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operator.js}*/
+  /** @type Operator @type Reporter / Boolean @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operators.js}*/
   Contains = "operator_contains",
-  /** @type Operator @type Reporter @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operator.js}*/
+  /** @type Operator @type Reporter @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operators.js}*/
   Modulo = "operator_mod",
-  /** @type Operator @type Reporter @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operator.js}*/
+  /** @type Operator @type Reporter @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operators.js}*/
   Round = "operator_round",
-  /** @type Operator @type Reporter @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operator.js}*/
+  /** @type Operator @type Reporter @see Scratch-VM Blocks/operator: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_operators.js}*/
   MathOperation = "operator_mathop",
 
   /** @type Procedures @type Hat @see Scratch-VM Blocks/procedures: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_procedures.js}*/
