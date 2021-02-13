@@ -6,7 +6,7 @@ export class SayForSeconds extends Block {
 
   constructor(
     public message: PetalsValue,
-    public seconds: PetalsValue
+    public seconds: PetalsValue,
   ) {
     super();
   }
@@ -14,7 +14,7 @@ export class SayForSeconds extends Block {
   get inputs(): Inputs {
     return {
       MESSAGE: this.message,
-      SECONDS: this.seconds
+      SECONDS: this.seconds,
     };
   }
 }

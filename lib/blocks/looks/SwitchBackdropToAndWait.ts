@@ -7,7 +7,7 @@ export class SwitchBackdropToAndWait extends Block {
   public readonly opcode = Opcode.SwitchBackdropToAndWait;
 
   constructor(
-    public backdrop: Costume | PetalsValue
+    public backdrop: Costume | PetalsValue,
   ) {
     super();
   }

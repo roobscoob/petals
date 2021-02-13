@@ -1,5 +1,7 @@
 import { Block } from ".";
+import { Script } from "../script";
 import { Opcode } from "../types";
+import { WhenStartAsClone } from "./control/whenStartAsClone";
 
 export abstract class Hat extends Block {
   static getOpcodes(): { [opcode: Opcode]: Hat } {
@@ -8,7 +10,7 @@ export abstract class Hat extends Block {
        * Control hat opcodes: {@link "https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_control.js"}
        */
 
-      control_start_as_clone:
+      control_start_as_clone: WhenStartAsClone,
 
       /**
        * Event hat opcodes: {@link "https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_event.js"}
@@ -29,5 +31,11 @@ export abstract class Hat extends Block {
 
       procedures_definition: 
     }
+  }
+
+  do(script: Script) {
+    script.blocks.unshift(this);
+
+    return script;
   }
 }

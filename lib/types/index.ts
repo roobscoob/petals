@@ -1,9 +1,9 @@
 import { Reporter } from "../blocks";
 
 export type PetalsValue = number
-| string
-| boolean
-| Reporter;
+  | string
+  | boolean
+  | Reporter;
 
 export enum Opcode {
   /** @type Control @type Stack / CBlock @see Scratch-VM Blocks/control: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_control.js}*/
@@ -112,7 +112,7 @@ export enum Opcode {
   /** @type Looks @type Stack @see Scratch-VM Blocks/looks: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_looks.js}*/
   HideAllSprites = "looks_hideallsprites",
   /** @internal @type Looks @type Stack @see Scratch-VM Blocks/looks: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_looks.js}*/
-  SwitchCostumeToMenu = "looks_switchcostumtomenu",
+  SwitchCostumeToMenu = "looks_switchcostumetomenu",
   /** @type Looks @type Stack @see Scratch-VM Blocks/looks: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_looks.js}*/
   SwitchCostumeTo = "looks_switchcostumeto",
   /** @internal @type Looks @type Stack @see Scratch-VM Blocks/looks: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_looks.js}*/
@@ -154,6 +154,8 @@ export enum Opcode {
   MoveSteps = "motion_movesteps",
   /** @type Motion @type Stack @see Scratch-VM Blocks/motion: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_motion.js}*/
   GotoXY = "motion_gotoxy",
+  /** @internal @type Motion @type Stack @see Scratch-VM Blocks/motion: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_motion.js}*/
+  GotoMenu = "motion_gotomenu",
   /** @type Motion @type Stack @see Scratch-VM Blocks/motion: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_motion.js}*/
   Goto = "motion_goto",
   /** @type Motion @type Stack @see Scratch-VM Blocks/motion: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_motion.js}*/
@@ -162,6 +164,8 @@ export enum Opcode {
   TurnLeft = "motion_turnleft",
   /** @type Motion @type Stack @see Scratch-VM Blocks/motion: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_motion.js}*/
   PointInDirection = "motion_pointindirection",
+  /** @internal @type Motion @type Stack @see Scratch-VM Blocks/motion: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_motion.js}*/
+  PointTowardsMenu = "motion_pointtowardsmenu",
   /** @type Motion @type Stack @see Scratch-VM Blocks/motion: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_motion.js}*/
   PointTowards = "motion_pointtowards",
   /** @type Motion @type Stack @see Scratch-VM Blocks/motion: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_motion.js}*/

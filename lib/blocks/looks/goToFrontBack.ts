@@ -2,8 +2,8 @@ import { Opcode } from "../../types";
 import { Block, Fields } from "../block";
 
 export enum FrontBackLevel {
-    Front = "front",
-    Back = "back"
+  Front = "front",
+  Back = "back",
 }
 
 export class GoToFrontBack extends Block {
@@ -17,7 +17,7 @@ export class GoToFrontBack extends Block {
 
   get fields(): Fields {
     return {
-      FRONT_BACK: this.frontback
+      FRONT_BACK: this.frontback,
     };
   }
 }

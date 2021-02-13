@@ -1,13 +1,7 @@
-import { Target } from "./target";
+import { RotationStyle } from "../types/serializedTarget";
+import { ITargetOptions, Target } from "./target";
 
-export enum RotationStyle {
-  LeftRight = "left-right",
-  DontRotate = "don't rotate",
-  AllAround = "all around",
-}
-
-export interface ISpriteOptions {
-  name: string;
+export interface ISpriteOptions extends ITargetOptions {
   x?: number;
   y?: number;
   visible?: boolean;
@@ -15,6 +9,7 @@ export interface ISpriteOptions {
   rotationStyle?: RotationStyle;
   draggable?: boolean;
   direction?: number;
+  name: string;
 }
 
 export class Sprite extends Target implements ISpriteOptions {
@@ -25,17 +20,15 @@ export class Sprite extends Target implements ISpriteOptions {
   public rotationStyle = RotationStyle.AllAround;
   public draggable = false;
   public direction = 90;
+  public name: string;
 
-  constructor(
-    public readonly nameOrConfig: string | ISpriteOptions,
-  ) {
-    super(typeof nameOrConfig === "string" ? nameOrConfig : nameOrConfig.name);
+  constructor(nameOrConfig: string | ISpriteOptions) {
+    super(typeof nameOrConfig === "string" ? { } : nameOrConfig);
 
-    if (typeof nameOrConfig !== "string") {
-      // eslint-disable-next-line guard-for-in
-      for (const element in nameOrConfig) {
-        this[element] = nameOrConfig[element];
-      }
+    if (typeof nameOrConfig === "string") {
+      this.name = nameOrConfig;
+    } else {
+      this.name = nameOrConfig.name;
     }
   }
 }

@@ -12,7 +12,7 @@ export class SetSizeTo extends Block {
 
   get inputs(): Inputs {
     return {
-      SIZE: this.size
+      SIZE: this.size,
     };
   }
 }

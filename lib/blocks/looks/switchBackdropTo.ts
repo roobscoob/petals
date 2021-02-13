@@ -1,20 +1,20 @@
 import { Costume } from "../../asset";
 import { Opcode, PetalsValue } from "../../types";
-import { Block, Inputs } from "../block";
+import { Block, Fields, Inputs } from "../block";
 import { Reporter } from "../reporter";
 
 export class SwitchBackdropToMenu extends Reporter {
   public readonly opcode = Opcode.SwitchCostumeToMenu;
 
   constructor(
-    public readonly backdrop: Costume
+    public readonly backdrop: Costume,
   ) {
     super();
   }
 
-  get fields() {
+  get fields(): Fields {
     return {
-      BACKDROP_OPTION: this.backdrop.name
+      BACKDROP_OPTION: this.backdrop.name,
     };
   }
 }
@@ -23,9 +23,9 @@ export class SwitchBackdropTo extends Block {
   public readonly opcode = Opcode.SwitchBackdropTo;
 
   constructor(
-    public backdrop: PetalsValue
+    public backdrop: PetalsValue,
   ) {
-    super(); 
+    super();
   }
 
   get inputs(): Inputs {

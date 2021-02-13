@@ -8,7 +8,7 @@ import { Sprite } from "../../targets/sprite";
  */
 export class CreateCloneOfMenu extends Reporter {
   public readonly opcode = Opcode.CreateCloneOfMenu;
-  
+
   constructor(
     public readonly sprite: Sprite,
   ) {
@@ -24,6 +24,12 @@ export class CreateCloneOfMenu extends Reporter {
 
 export class CreateCloneOf extends Block {
   public readonly opcode = Opcode.CreateCloneOf;
+
+  get spriteName(): PetalsValue {
+    return this.sprite instanceof Sprite
+      ? this.sprite.name
+      : this.sprite;
+  }
 
   constructor(
     public readonly sprite: Sprite | PetalsValue,

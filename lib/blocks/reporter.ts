@@ -2,6 +2,7 @@ import { Block } from ".";
 import { Opcode } from "../types";
 import * as Control from "./control";
 import * as Data from "./data";
+import * as Looks from "./looks";
 
 export abstract class Reporter extends Block {
   static getOpcodes(): { [opcode: Opcode]: Reporter } {
@@ -27,9 +28,9 @@ export abstract class Reporter extends Block {
        * Looks reporter opcodes: {@link "https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_looks.js"}
        */
 
-      looks_size:
-      looks_costumenumbername:
-      looks_backdropnumbername:
+      looks_size: Looks.Size,
+      looks_costumenumbername: Looks.CostumeNumberName,
+      looks_backdropnumbername: Looks.BackdropNumberName,
 
       /**
        * Motion reporter opcodes: {@link "https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_motion.js"}

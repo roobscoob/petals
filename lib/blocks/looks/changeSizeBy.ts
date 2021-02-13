@@ -12,7 +12,7 @@ export class ChangeSizeBy extends Block {
 
   get inputs(): Inputs {
     return {
-      CHANGE: this.change
+      CHANGE: this.change,
     };
   }
 }
