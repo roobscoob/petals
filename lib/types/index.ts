@@ -169,7 +169,7 @@ export enum Opcode {
   /** @type Motion @type Stack @see Scratch-VM Blocks/motion: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_motion.js}*/
   PointTowards = "motion_pointtowards",
   /** @type Motion @type Stack @see Scratch-VM Blocks/motion: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_motion.js}*/
-  GlideSecsToXY = "motion_glidesecstoxy",
+  GlideSecondsToXY = "motion_glidesecstoxy",
   /** @type Motion @type Stack @see Scratch-VM Blocks/motion: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_motion.js}*/
   GlideTo = "motion_glideto",
   /** @type Motion @type Stack @see Scratch-VM Blocks/motion: {@link https://github.com/LLK/scratch-vm/blob/develop/src/blocks/scratch3_motion.js}*/
