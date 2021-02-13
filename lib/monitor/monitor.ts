@@ -38,15 +38,15 @@ export class Monitor implements MonitorInfo {
     public info: MonitorInfo = {},
     public sprite?: Sprite,
   ) {
-    this.mode ??= info.mode;
-    this.value ??= info.value;
-    this.width ??= info.width;
-    this.height ??= info.height;
-    this.x ??= info.x;
-    this.y ??= info.y;
-    this.visible ??= info.visible;
-    this.min ??= info.min;
-    this.max ??= info.max;
-    this.descrete ??= info.descrete;
+    this.mode = info.mode;
+    this.value = info.value;
+    this.width = info.width;
+    this.height = info.height;
+    this.x = info.x;
+    this.y = info.y;
+    this.visible = info.visible;
+    this.min = info.min;
+    this.max = info.max;
+    this.descrete = info.descrete;
   }
 }
