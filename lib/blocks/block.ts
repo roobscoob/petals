@@ -4,6 +4,9 @@ import { List, Variable } from "./data/variables";
 import * as Control from "./control";
 import * as Data from "./data";
 import * as Looks from "./looks";
+import { SerializedBlock } from "../types/serializedBlock";
+import { Reporter } from "./reporter";
+import { Cap } from "./cap";
 
 export type Fields = {
   [key: string]: string | Variable | List;
@@ -144,6 +147,18 @@ export abstract class Block {
       sound_cleareffects: 
       sound_setvolumeto: 
       sound_changevolumeby: 
+    }
+  }
+
+  static fromJSON(block: SerializedBlock): Block {
+    if (this.getOpcodes()[block.opcode] !== null) {
+      // we are dealing with a block.
+    } else
+    if (Reporter.getOpcodes()[block.opcode] !== null) {
+      // we are dealing with a reporter.
+    } else
+    if (Cap.getOpcodes()[block.opcode] !== null) {
+      
     }
   }
 }

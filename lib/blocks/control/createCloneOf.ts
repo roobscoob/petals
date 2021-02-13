@@ -25,6 +25,12 @@ export class CreateCloneOfMenu extends Reporter {
 export class CreateCloneOf extends Block {
   public readonly opcode = Opcode.CreateCloneOf;
 
+  get spriteName(): PetalsValue {
+    return this.sprite instanceof Sprite
+      ? this.sprite.name
+      : this.sprite;
+  }
+
   constructor(
     public readonly sprite: Sprite | PetalsValue,
   ) {

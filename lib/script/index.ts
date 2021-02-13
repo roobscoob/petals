@@ -1,14 +1,12 @@
-import { Block, Cap } from "../blocks";
+import { Block, Cap, Hat } from "../blocks";
 
 export class Script {
-  constructor(public readonly blocks: Block[]) {}
+  public readonly capBlock?: Cap;
 
-  static cap(capBlock: Cap): Script {
-    return new Script([]).cap(capBlock);
-  }
+  constructor(public readonly blocks: Block[], public hat?: Hat) {}
 
   cap(capBlock: Cap): this {
-    this.blocks.push(capBlock);
+    (this.capBlock as Cap) = capBlock;
 
     return this;
   }

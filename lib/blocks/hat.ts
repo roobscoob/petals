@@ -1,7 +1,7 @@
 import { Block } from ".";
 import { Script } from "../script";
 import { Opcode } from "../types";
-import { WhenStartAsClone } from "./control/WhenStartAsClone";
+import { WhenStartAsClone } from "./control/whenStartAsClone";
 
 export abstract class Hat extends Block {
   static getOpcodes(): { [opcode: Opcode]: Hat } {
