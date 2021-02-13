@@ -1,18 +1,18 @@
 import { Opcode, PetalsValue } from "../../types";
 import { Block, Inputs } from "../block";
 
-export class MoveSteps extends Block {
-  public readonly opcode = Opcode.MoveSteps;
+export class ChangeXBy extends Block {
+  public readonly opcode = Opcode.ChangeXBy;
 
   constructor(
-    public steps: PetalsValue,
+    public dx: PetalsValue,
   ) {
     super();
   }
 
   get inputs(): Inputs {
     return {
-      STEPS: this.steps,
+      DX: this.dx,
     };
   }
 }
